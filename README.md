@@ -14,8 +14,6 @@ npm start
 
 ## User stories
 
-##
-
 ![Console.dev Splash]()
 
 ![Console.dev Splash and Nav]()
