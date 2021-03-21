@@ -1,12 +1,14 @@
 import './App.css';
 import Main from './Components/Main';
+import { Route, Router } from 'react-router-dom';
+import history from '../src/Components/Context/history';
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <Main />
-      </header>
+      <Router history={history}>
+        <Route exact path='/' component={Main} />
+      </Router>
     </div>
   );
 }
