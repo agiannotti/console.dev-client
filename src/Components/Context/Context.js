@@ -39,14 +39,7 @@ const FoodfulContext = createContext({
 export default FoodfulContext;
 
 export class FoodfulProvider extends Component {
-  state = {
-    resources: [],
-    comments: [],
-    resourceList: [],
-    resource: nullResource,
-    comment: nullComment,
-    error: null,
-  };
+  state = {};
 
   setResourceList = (resourceList) => {
     this.setState({ resourceList });
