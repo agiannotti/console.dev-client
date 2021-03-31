@@ -1,6 +1,7 @@
-/* .__code {
+.__code {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  width: 70%;
-  font-size: 12px;
-} */
+  align-items: center;
+  margin: auto;
+}
