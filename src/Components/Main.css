@@ -1,11 +1,9 @@
 .__code {
-  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 200px;
-  /* margin-right: 90px; */
 }
 
 #__text {
