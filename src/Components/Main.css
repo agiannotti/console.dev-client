@@ -1,7 +1,24 @@
 .__code {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  margin-top: 200px;
+  margin-right: 90px;
+}
+
+.__text {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 12rem;
+  height: 1.2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(95, 100, 100);
+}
+
+.__text:focus {
+  outline: none;
 }

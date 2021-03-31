@@ -1,102 +1,33 @@
 import React, { Component, createContext } from 'react';
 
-export const nullResource = {
-  title: '',
-  content: '',
-  zipcode: '',
-  date_published: '',
+export const textInput = {
+  text: '',
 };
 
-export const nullComment = {
-  id: '',
-  content: '',
-  date_created: '',
-  resource_id: '',
-};
-
-export const resourceToEdit = {
-  title: '',
-  content: '',
-  zipcode: '',
-  error: null,
-};
-
-const FoodfulContext = createContext({
-  resourceList: [],
-  resource: nullResource,
-  comment: nullComment,
-  error: null,
-  setResourceList: () => {},
-  removeFromResourceList: () => {},
-  setResource: () => {},
-  clearResource: () => {},
-  setComment: () => {},
-  clearComment: () => {},
-  setError: () => {},
-  clearError: () => {},
+const ConsoleContext = createContext({
+  textInput: textInput,
 });
 
-export default FoodfulContext;
+export default ConsoleContext;
 
-export class FoodfulProvider extends Component {
-  state = {};
-
-  setResourceList = (resourceList) => {
-    this.setState({ resourceList });
+export class ConsoleProvider extends Component {
+  state = {
+    text: '',
   };
 
-  setResource = (resource) => {
-    this.setState({ resource });
-  };
-
-  clearResource = () => {
-    this.setState({ nullResource });
-  };
-
-  setComment = (comment) => {
-    this.setState({ comment });
-  };
-
-  clearComment = () => {
-    this.setState({ nullComment });
-  };
-
-  setError = (error) => {
-    console.error(error);
-    this.setState({ error });
-  };
-
-  clearError = () => {
-    this.setState({ error: null });
-  };
-
-  removeFromResourceList = (id) => {
-    this.setState({
-      resourceList: this.state.resourceList.filter((resource) => {
-        return resource.id !== id;
-      }),
-    });
+  setText = (textInput) => {
+    this.setState({ textInput });
   };
 
   render() {
     const value = {
-      resourceList: this.state.resourceList,
-      resource: this.state.resource,
-      comment: this.state.comment,
-      error: this.state.error,
-      setResourceList: this.setResourceList,
-      setResource: this.setResource,
-      clearResource: this.clearResource,
-      setComment: this.setComment,
-      clearComment: this.clearComment,
-      setError: this.setError,
-      clearError: this.clearError,
-      removeFromResourceList: this.removeFromResourceList,
+      textInput: this.state.textInput,
+      setText: this.setText,
     };
     return (
-      <FoodfulContext.Provider value={value}>
+      <ConsoleContext.Provider value={value}>
         {this.props.children}
-      </FoodfulContext.Provider>
+      </ConsoleContext.Provider>
     );
   }
 }

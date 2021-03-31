@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './Main.css';
 
 export default class Main extends Component {
+  handleOnchange = () => {};
   render() {
     return (
-      <div>
-        <pre className='__code'>{`
+      <>
+        <div>
+          <pre className='__code'>{`
 
             const serializeResource = (resource) => ({
               id: resource.id,
@@ -16,7 +18,11 @@ export default class Main extends Component {
             });
             
           `}</pre>
-      </div>
+        </div>
+        <div>
+          <input className='__text'></input>
+        </div>
+      </>
     );
   }
 }
