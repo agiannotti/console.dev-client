@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { ConsoleProvider } from './Components/Context/Context';
+// import { ConsoleProvider } from './Components/Context/Context';
 
 ReactDOM.render(
-  <ConsoleProvider>
+  <React.StrictMode>
     <App />
-  </ConsoleProvider>,
+  </React.StrictMode>,
   document.getElementById('root')
 );

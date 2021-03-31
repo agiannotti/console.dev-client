@@ -5,13 +5,14 @@
   align-items: center;
   margin: auto;
   margin-top: 200px;
-  margin-right: 90px;
+  /* margin-right: 90px; */
 }
 
-.__text {
+#__text {
   display: flex;
   align-items: center;
   margin: auto;
+  margin-top: 30px;
   width: 12rem;
   height: 1.2rem;
   border: none;
@@ -19,6 +20,6 @@
   background-color: rgb(95, 100, 100);
 }
 
-.__text:focus {
+#__text:focus {
   outline: none;
 }
