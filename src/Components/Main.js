@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 export default function Main() {
   const [textInput, setTextInput] = useState('');
   const [codeSnip, setCodeSnip] = useState('');
+  const [textColor, setTextColor] = useState('');
 
   useEffect(() => {
     setCodeSnip(
@@ -22,10 +23,10 @@ export default function Main() {
         codeSnip.charAt(textInput.length - 1)
       ) {
         console.log(textInput.charAt(textInput.length - 1), 'incorrect');
-        return textInput.charAt(textInput.length - 1);
+        return setTextColor('red');
       } else {
         console.log(textInput.charAt(textInput.length - 1), 'correct');
-        return textInput.charAt(textInput.length - 1);
+        return setTextColor('white');
       }
     }
   }, [codeSnip, textInput]);
@@ -46,7 +47,9 @@ export default function Main() {
   return (
     <div>
       <div className='parent'>
-        <pre className='__code'>{codeSnip}</pre>
+        <pre style={{ color: textColor }} className='__code'>
+          {codeSnip}
+        </pre>
       </div>
       <div>
         <form>
