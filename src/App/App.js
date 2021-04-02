@@ -1,6 +1,6 @@
-import Main from './Components/Main';
+import Main from '../Components/Main';
 import { Route, Router } from 'react-router-dom';
-import history from '../src/Components/Context/history';
+import history from '../Components/Context/history';
 
 function App() {
   return (
