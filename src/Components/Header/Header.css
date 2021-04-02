@@ -6,6 +6,7 @@
 
 .header__container {
   background-color: #282c34;
+  font-size: 0.8rem;
   display: flex;
   flex-direction: column;
   text-align: center;
