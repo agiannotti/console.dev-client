@@ -1,5 +1,6 @@
 import './Main.css';
 import React, { useState, useEffect } from 'react';
+import Test from '../Test/Test';
 
 export default function Main() {
   const [textInput, setTextInput] = useState('');
@@ -46,6 +47,7 @@ export default function Main() {
 
   return (
     <div>
+      <Test />
       <div className='parent'>
         <pre style={{ color: textColor }} className='__code'>
           {codeSnip}

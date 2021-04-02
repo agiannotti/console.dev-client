@@ -16,7 +16,7 @@ export default class App extends Component {
         <Header />
         <main>
           <Switch>
-            <PrivateRoute exact path='/' component={Main} />
+            <Route exact path='/' component={Main} />
             <PublicOnlyRoute path={'/register'} component={RegistrationRoute} />
             <PublicOnlyRoute path={'/login'} component={LoginRoute} />
             <Route component={NotFoundRoute} />
