@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Input, Label } from '../Form/Form';
-import AuthApiService from '../../services/auth-api-service';
-import UserContext from '../../context/UserContext';
-import Button from '../Button/Button';
+import AuthApiService from '../../Services/auth-api-service';
+import UserContext from '../../Context/UserContext';
 import './LoginForm.css';
 
 class LoginForm extends Component {
@@ -49,10 +47,10 @@ class LoginForm extends Component {
           {error && <p>{error}</p>}
         </div>
         <div className='input__label'>
-          <Label htmlFor='login-username-input' className='form__label'>
+          <label htmlFor='login-username-input' className='form__label'>
             Username
-          </Label>
-          <Input
+          </label>
+          <input
             ref={this.firstInput}
             id='login-username-input'
             name='username'
@@ -62,10 +60,10 @@ class LoginForm extends Component {
           />
         </div>
         <div className='input__label'>
-          <Label htmlFor='login-password-input' className='form__label'>
+          <label htmlFor='login-password-input' className='form__label'>
             Password
-          </Label>
-          <Input
+          </label>
+          <input
             id='login-password-input'
             name='password'
             type='password'
@@ -74,9 +72,9 @@ class LoginForm extends Component {
             required
           />
         </div>
-        <Button type='submit' className='form__submit'>
+        <button type='submit' className='form__submit'>
           Login
-        </Button>
+        </button>
       </form>
     );
   }
