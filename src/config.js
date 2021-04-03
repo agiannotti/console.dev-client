@@ -1,6 +1,6 @@
 const config = {
-  API_ENDPOINT: process.env.REACT_APP_API_BASE,
-  TOKEN_KEY: process.env.TOKEN_KEY,
+  API_ENDPOINT: 'https://console-app-server.herokuapp.com/api',
+  TOKEN_KEY: 'blogful-client-auth-token',
 };
 
 export default config;
