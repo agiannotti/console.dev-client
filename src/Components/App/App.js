@@ -1,7 +1,7 @@
 import Main from '../Main/Main';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PrivateRoute from '../../PrivateRoute/PrivateRoute';
+// import PrivateRoute from '../../PrivateRoute/PrivateRoute';
 import PublicOnlyRoute from '../../PublicOnlyRoute/PublicOnlyRoute';
 import RegistrationRoute from '../../Routes/RegistrationRoute/RegistrationRoute';
 import LoginRoute from '../../Routes/LoginRoute/LoginRoute';
