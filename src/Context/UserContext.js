@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import AuthApiService from '../Services/auth-api-service';
-import TokenService from '../Services/token-service';
-import IdleService from '../Services/idle-service';
+import React, { Component } from "react";
+import AuthApiService from "../Services/auth-api-service";
+import TokenService from "../Services/token-service";
+import IdleService from "../Services/idle-service";
 
 const UserContext = React.createContext({
   user: {},
@@ -33,7 +33,7 @@ export class UserProvider extends Component {
     IdleService.setIdleCallback(this.logoutBecauseIdle);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     if (TokenService.hasAuthToken()) {
       IdleService.regiserIdleTimerResets();
       TokenService.queueCallbackBeforeExpiry(() => {
