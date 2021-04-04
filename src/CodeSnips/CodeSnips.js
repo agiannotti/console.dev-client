@@ -37,7 +37,7 @@ let codeSnips = {
       let evens = numArr.filter(numbers => numbers%2 === 0)
       if (evens.length === 1) return numArr.indexOf(evens[0])+ 1
       else {
-      let odd = numArr.find(num => num %2 === 1) 
+      let odd = numArr.find(num => num %2 === 1)
       return numArr.indexOf(odd) + 1
       }
       }`,
