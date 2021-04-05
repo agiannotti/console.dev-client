@@ -27,16 +27,6 @@ class RegistrationForm extends Component {
         username.value = "";
         password.value = "";
         this.props.onRegistrationSuccess();
-        // AuthApiService.postLogin({
-        //   username: username.value,
-        //   password: password.value,
-        // }).then((res) => {
-        //   name.value = '';
-        //   username.value = '';
-        //   password.value = '';
-        //   this.context.processLogin(res.authToken);
-        //   this.props.onRegistrationSuccess();
-        // });
       })
       .catch((res) => {
         this.setState({ error: res.error });
