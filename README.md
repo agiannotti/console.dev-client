@@ -11,24 +11,10 @@
 npm install
 npm start
 ```
+![Login](https://user-images.githubusercontent.com/72902345/113610033-38b69680-9612-11eb-8e4d-6069e59703ee.PNG)
 
-## User stories
+![Main](https://user-images.githubusercontent.com/72902345/113610064-410ed180-9612-11eb-99fb-d82c1d423b9b.PNG)
 
-![Console.dev Splash]()
-
-![Console.dev Splash and Nav]()
-
-# Users can generate a list of all currently available resources.
-
-![Console.dev Locate]()
-
-# Users Can Add, Edit, and Verify currently posted resources.
-
-![Console.dev Add]()
-
-# Mission Page
-
-![Console.dev Mission]()
 
 ## Technology Used
 
@@ -36,8 +22,9 @@ Client:
 
 • React, Javascript, CSS, HTML
 
-• Vercel
+• Vercel, Heroku
 
 • Jest
 
 • Babel, Webpack, React Router Dom
+![Login](https://user-images.githubusercontent.com/72902345/113610033-38b69680-9612-11eb-8e4d-6069e59703ee.PNG)
