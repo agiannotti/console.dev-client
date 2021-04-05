@@ -11,8 +11,6 @@ export default class Test extends Component {
     return (
       <div className='__test'>
         <Link>User Data</Link>
-        <br />
-        <Link>User Data</Link>
       </div>
     );
   }
