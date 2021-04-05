@@ -1,5 +1,4 @@
 .header__link {
-  display: block;
   text-align: center;
   text-decoration: none;
 }
@@ -13,64 +12,23 @@
 }
 
 .tagline {
-  padding: 10px 60px;
-}
-
-.language__name {
-  text-align: center;
-}
-.start__practicing {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  text-decoration: none;
-}
-
-.word__list {
-  margin: 0;
-  padding: 0;
-}
-
-.word__list__item {
-  margin: 8px;
+  padding: 10px;
 }
 
 .dashboard {
   display: flex;
   flex-direction: column;
 }
-.dashboard ul {
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-}
-
-.total__correct {
-  text-align: center;
-}
-.words__header {
-  text-align: center;
-}
-
-.next__word__page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 5px 35px;
-}
-
-.header__title {
-}
 
 .nav__links {
+  font-size: 20px;
+  position: fixed;
+  top: 30px;
+  right: 50px;
 }
 
 .login__link {
 }
-
 .register__link {
 }
 
@@ -95,9 +53,6 @@ li {
   padding: 10px 0px;
 }
 
-.next__word__page .logged__in {
-}
-
 .user__logged__in {
 }
 .login__form {
@@ -110,25 +65,9 @@ li {
 .logout__link:hover {
   cursor: pointer;
 }
-.submit__answer {
-  margin: 10px;
-}
 
 .tagline {
 }
 
 @media all and (min-width: 900px) {
-  .login__route {
-  }
-
-  .tagline {
-  }
-
-  .nav__links {
-  }
-
-  .login__route {
-  }
-  .footer {
-  }
 }
