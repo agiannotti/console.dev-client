@@ -59,16 +59,17 @@ export default function Main() {
       </div>
       <div>
         <form>
-          <label for='typing_box'>
-            <textarea
-              name='typing_box'
-              type='text'
-              onChange={handleOnChange}
-              id='__text'
-              onKeyDown={handleKeyDown}
-              value={textInput}
-            />
+          <label className='label' htmlfor='typing_box'>
+            asdasd
           </label>
+          <textarea
+            name='typing_box'
+            type='text'
+            onChange={handleOnChange}
+            id='__text'
+            onKeyDown={handleKeyDown}
+            value={textInput}
+          />
         </form>
         <div className='__buttons'>
           <button onClick={handleRestartButton} className='__restart'>

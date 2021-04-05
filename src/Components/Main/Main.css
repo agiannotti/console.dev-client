@@ -32,7 +32,9 @@
   display: flex;
   justify-content: center;
 }
-
+.label {
+  display: none;
+}
 .__restart,
 .__randomize {
   margin: 0.3rem;
