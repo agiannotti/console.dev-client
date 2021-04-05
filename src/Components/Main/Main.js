@@ -62,7 +62,6 @@ export default function Main() {
             id="__text"
             onKeyDown={handleKeyDown}
             value={textInput}
-            // placeholder="Begin typing here"
           />
         </form>
         <div className="__buttons">
