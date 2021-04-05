@@ -27,4 +27,3 @@ Client:
 • Jest
 
 • Babel, Webpack, React Router Dom
-![Login](https://user-images.githubusercontent.com/72902345/113610033-38b69680-9612-11eb-8e4d-6069e59703ee.PNG)
