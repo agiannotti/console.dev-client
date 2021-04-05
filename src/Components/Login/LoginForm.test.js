@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import LoginForm from './LoginForm';
 
 import { BrowserRouter, Route } from 'react-router-dom';
 
-describe('App Component', () => {
+describe('LoginForm Component', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(
       <BrowserRouter>
-        <Route path={'/edit'} component={App} />
+        <Route path={'/edit'} component={LoginForm} />
       </BrowserRouter>,
       div
     );
