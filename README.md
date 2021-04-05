@@ -1,7 +1,7 @@
 # Console.dev App
 
-[Live Client Deployment]()  
-[Live Server Deployment]()
+[Live Client Deployment](https://console-dev-client.vercel.app/)  
+[Live Server Deployment](https://console-app-server.herokuapp.com/)
 
 ## Summary
 Minimalist Code Typing Test Application
