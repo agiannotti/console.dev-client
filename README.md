@@ -4,6 +4,7 @@
 [Live Server Deployment]()
 
 ## Summary
+Minimalist Code Typing Test Application
 
 ## Installation
 
@@ -20,7 +21,7 @@ npm start
 
 Client:
 
-• React, Javascript, CSS, HTML
+• React, Hooks, Javascript, CSS, HTML
 
 • Vercel, Heroku
 
