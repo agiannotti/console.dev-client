@@ -61,6 +61,7 @@ export default function Main() {
         <form>
           <label for='typing_box'>
             <textarea
+              name='typing_box'
               type='text'
               onChange={handleOnChange}
               id='__text'
