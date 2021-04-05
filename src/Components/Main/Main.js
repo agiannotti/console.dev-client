@@ -10,10 +10,13 @@ export default function Main() {
   );
   const [textColor, setTextColor] = useState("");
 
+  const newSnip = codeSnips.snippets[0];
   const randomSnip =
     codeSnips.snippets[Math.floor(Math.random() * codeSnips.snippets.length)];
 
   useEffect(() => {
+    setCodeSnip(codeSnip);
+
     for (let i = 0; i < codeSnip.length; i++) {
       if (
         textInput.charAt(textInput.length - 1) !==
@@ -24,7 +27,7 @@ export default function Main() {
         return setTextColor("white");
       }
     }
-  }, [codeSnip, textInput]);
+  }, [codeSnip, textInput, newSnip]);
 
   const handleOnChange = (e) => {
     setTextInput(e.target.value);
@@ -37,11 +40,11 @@ export default function Main() {
     }
   };
 
-  const handleRestartButton = () => {
+  const handleRestartButton = (e) => {
     setTextInput("");
   };
 
-  const handleRandomizeButton = () => {
+  const handleRandomizeButton = (e) => {
     setTextInput("");
     setCodeSnip(randomSnip);
   };
