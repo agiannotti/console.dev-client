@@ -64,7 +64,6 @@ export default function Main() {
           </label>
           <textarea
             name='typing_box'
-            type='text'
             onChange={handleOnChange}
             id='__text'
             onKeyDown={handleKeyDown}
