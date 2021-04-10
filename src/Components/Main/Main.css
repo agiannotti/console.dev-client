@@ -35,7 +35,23 @@
 .label {
   display: none;
 }
-.__restart,
+.__restart {
+  margin: 0.1rem;
+  padding: 7px;
+  font-weight: bold;
+  font-family: inherit;
+  color: black;
+  margin-top: 4px;
+  border: none;
+  border-radius: 4px;
+}
 .__randomize {
-  margin: 0.3rem;
+  margin: 0.1rem;
+  padding: 7px;
+  font-weight: bold;
+  font-family: inherit;
+  color: black;
+  margin-top: 4px;
+  border: none;
+  border-radius: 4px;
 }

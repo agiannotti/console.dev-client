@@ -36,6 +36,10 @@
   text-align: center;
 }
 
+.splash_description {
+  font-size: 13px;
+}
+
 .registration__container {
   display: flex;
   flex-direction: column;

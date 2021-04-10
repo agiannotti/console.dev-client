@@ -1,6 +1,5 @@
 import './Main.css';
 import React, { useState, useEffect } from 'react';
-import Test from '../Test/Test';
 import codeSnips from '../../CodeSnips/CodeSnips';
 
 export default function Main() {
@@ -51,7 +50,6 @@ export default function Main() {
 
   return (
     <div>
-      <Test />
       <div className='parent'>
         <pre style={{ color: textColor }} className='__code'>
           {codeSnip}
@@ -60,7 +58,7 @@ export default function Main() {
       <div>
         <form>
           <label className='label' htmlfor='typing_box'>
-            asdasd
+            type box below
           </label>
           <textarea
             name='typing_box'

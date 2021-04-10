@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import TokenService from "../../Services/token-service";
-import UserContext from "../../Context/UserContext";
-import "./Header.css";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import TokenService from '../../Services/token-service';
+import UserContext from '../../Context/UserContext';
+import './Header.css';
 
 class Header extends Component {
   static contextType = UserContext;
@@ -13,15 +13,15 @@ class Header extends Component {
 
   renderLogoutLink() {
     return (
-      <div className="logged__in">
-        <span className="user__logged__in">
+      <div className='logged__in'>
+        <span className='user__logged__in'>
           Hello, {this.context.user.name}!
         </span>
-        <nav className="logout__container">
+        <nav className='logout__container'>
           <Link
-            className="logout__link"
+            className='logout__link'
             onClick={this.handleLogoutClick}
-            to="/login"
+            to='/login'
           >
             Logout
           </Link>
@@ -32,13 +32,13 @@ class Header extends Component {
 
   renderLoginLink() {
     return (
-      <div className="login__route">
-        <nav className="nav__links">
-          <Link to="/login" className="login__link">
+      <div className='login__route'>
+        <nav className='nav__links'>
+          <Link to='/login' className='login__link'>
             Login
           </Link>
           <br />
-          <Link to="/register" className="register__link">
+          <Link to='/register' className='register__link'>
             Sign up
           </Link>
         </nav>
@@ -49,17 +49,23 @@ class Header extends Component {
   renderTagline() {
     return (
       <div>
-        <p className="tagline">Code Typing Test App</p>
+        <h1 className='tagline'>
+          Code Typing Test App
+          <p className='splash_description'>
+            Practice typing code snippets below! Enter and then tab after each
+            line. The text will turn red if you miss a character.
+          </p>
+        </h1>
       </div>
     );
   }
 
   render() {
     return (
-      <header className="header__container">
-        <h1 className="header__title">
-          <Link to="/" className="header__link">
-            <span className="spaced">Console.dev</span>
+      <header className='header__container'>
+        <h1 className='header__title'>
+          <Link to='/' className='header__link'>
+            <span className='spaced'>Console.dev</span>
           </Link>
         </h1>
         {TokenService.hasAuthToken()
